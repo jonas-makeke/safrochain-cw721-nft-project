@@ -1,0 +1,21 @@
+# Dépendances Node.js
+node_modules/
+
+# Sauvegardes locales
+index.html.avant-*
+index.html.backup
+*.bak
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.mnemonic
+
+# Fichiers temporaires
+dist/
+.vite/
+*.log
+.DS_Store
