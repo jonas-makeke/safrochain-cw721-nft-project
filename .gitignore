@@ -19,3 +19,6 @@ dist/
 .vite/
 *.log
 .DS_Store
+
+# Sauvegardes locales
+sauvegardes/

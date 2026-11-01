@@ -1,0 +1,232 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #f8fafc;
+  background: #080e20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at top right, #30205c, transparent 45%),
+    linear-gradient(135deg, #080e20, #121b38);
+  color: #f8fafc;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #a78bfa;
+}
+
+p {
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+button {
+  padding: 13px 20px;
+  margin: 8px 6px 8px 0;
+  border: 1px solid #8b5cf6;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #7c3aed55;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* En-tête Safrochain Genesis Cube */
+.site-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid #ffffff20;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand-icon {
+  font-size: 32px;
+  color: #a78bfa;
+}
+
+.network-badge {
+  padding: 10px 16px;
+  border: 1px solid #22d3ee55;
+  border-radius: 30px;
+  color: #67e8f9;
+  background: #08334455;
+  font-size: 13px;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 60px;
+}
+
+.eyebrow {
+  color: #22d3ee;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.hero h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #c4b5fd, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero > p:last-child {
+  max-width: 650px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 50px 0 35px;
+  }
+
+  .brand {
+    font-size: 13px;
+  }
+
+  .network-badge {
+    font-size: 11px;
+  }
+}
+
+/* Présentation du NFT Genesis Cube */
+.nft-showcase {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #ffffff20;
+  border-radius: 24px;
+  background: #111a33cc;
+  box-shadow: 0 20px 60px #00000040;
+}
+
+.nft-art {
+  min-height: 350px;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle, #7c3aed70, transparent 65%),
+    linear-gradient(135deg, #172554, #312e81, #0f172a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  text-align: center;
+  color: #c4b5fd;
+  letter-spacing: 3px;
+}
+
+.cube-symbol {
+  font-size: 130px;
+  line-height: 1;
+  color: #a78bfa;
+  text-shadow: 0 0 35px #8b5cf6;
+}
+
+.nft-details h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: white;
+}
+
+.nft-details strong {
+  color: #c4b5fd;
+}
+
+.nft-status {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  border-radius: 30px;
+  background: #064e3b;
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .nft-showcase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .nft-art {
+    min-height: 260px;
+  }
+
+  .cube-symbol {
+    font-size: 90px;
+  }
+}
+
+/* Masquer les outils techniques dans l'interface publique */
+#rpc,
+#rpc-result,
+#wasm,
+#wasm-result,
+#prepare,
+#prepare-result,
+#deploy,
+#deploy-result,
+#estimate,
+#estimate-result,
+#instantiate-nft,
+#instantiate-result,
+#mint-nft,
+#mint-result {
+  display: none;
+}
+
+/* Masquer les commandes techniques */
+#rpc, #rpc-result,
+#wasm, #wasm-result,
+#prepare, #prepare-result,
+#deploy, #deploy-result,
+#estimate, #estimate-result,
+#instantiate-nft, #instantiate-result,
+#mint-nft, #mint-result {
+  display: none;
+}
