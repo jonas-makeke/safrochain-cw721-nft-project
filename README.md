@@ -1,6 +1,6 @@
 # Safrochain CW721 NFT Project
 
-Projet Web3 réalisé sur Safrochain Mainnet dans le cadre d'une mission.
+Projet Web3 réalisé sur Safrochain Mainnet.
 
 ## Objectif
 
