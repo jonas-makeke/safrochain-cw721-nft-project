@@ -1,6 +1,6 @@
 # Safrochain CW721 NFT Project
 
-Projet Web3 réalisé sur Safrochain Mainnet dans le cadre d'une mission DYMA.
+Projet Web3 réalisé sur Safrochain Mainnet dans le cadre d'une mission.
 
 ## Objectif
 
@@ -40,4 +40,3 @@ Attention : les opérations blockchain sur Mainnet peuvent entraîner des frais 
 ## Statut
 
 NFT créé avec succès sur Safrochain Mainnet.
-Preuve soumise sur DYMA, en attente de validation.
